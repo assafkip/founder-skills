@@ -34,7 +34,7 @@ ADHD and neurodivergent-aware interaction rules for founders using Claude Code a
 
 ```bash
 # Clone the repo
-git clone https://github.com/assafkipnis/founder-skills.git
+git clone https://github.com/assafkip/founder-skills.git
 
 # Copy skills to your Claude Code skills directory
 cp -r founder-skills/skills/* ~/.claude/skills/
@@ -43,7 +43,7 @@ cp -r founder-skills/skills/* ~/.claude/skills/
 ### Option 2: Symlink (recommended for staying up to date)
 
 ```bash
-git clone https://github.com/assafkipnis/founder-skills.git ~/founder-skills
+git clone https://github.com/assafkip/founder-skills.git ~/founder-skills
 
 # Symlink each skill
 ln -s ~/founder-skills/skills/founder-debrief ~/.claude/skills/founder-debrief
@@ -54,7 +54,7 @@ ln -s ~/founder-skills/skills/neurodivergent-founder ~/.claude/skills/neurodiver
 
 ```bash
 # From your project root
-git submodule add https://github.com/assafkipnis/founder-skills.git .claude/founder-skills
+git submodule add https://github.com/assafkip/founder-skills.git .claude/founder-skills
 
 # Symlink skills
 ln -s .claude/founder-skills/skills/founder-debrief .claude/skills/founder-debrief
