@@ -1,92 +1,71 @@
 # Founder Skills for Claude Code
 
-Two Claude Code skills for founders. Built from real usage across 50+ investor and design partner conversations.
+You just had an investor call. You remember it went well. You think they pushed back on pricing. You're not sure what you said about competition. The follow-up email is due tomorrow and you don't know what to write.
 
-## What's Inside
+These two skills fix that.
+
+## What this is
+
+Two Claude Code skills built for founders who run their business through AI. One captures what happens in every conversation so nothing gets lost. The other makes Claude stop talking to you like a productivity app and start working with how your brain actually works.
+
+Built by a founder with ADHD running a pre-seed startup entirely through Claude Code. Refined across 50+ investor and design partner conversations.
+
+## The skills
 
 ### `founder-debrief`
 
-Structured post-conversation extraction that turns every investor pitch, customer call, partner meeting, or advisor session into a system update. Instead of scattered notes that decay, you get insights routed to canonical files that compound over time.
+Run this after any investor pitch, customer call, or advisor session. It walks you through 8 extraction questions and routes every insight to the right place: what resonated goes to your talk tracks, pushback goes to your objections file, next steps become tasks.
 
-**What it does:**
-- Walks through an 8-section extraction template (what resonated, what confused them, pushback, unanswered questions, positioning drift, next steps, positioning changes, proof gaps)
-- Routes each insight to the right canonical file with persona tags
-- Maintains a canonical file system: talk tracks, objections, discovery, decisions, current state, and relationships
-- Quality checks for verbatim phrases, concrete next steps, and source attribution
+**Without this:** Notes decay in Google Docs. You forget what landed. You repeat mistakes.
 
-**Trigger phrases:** "debrief", "conversation extraction", "what resonated", "meeting notes", "post-meeting review"
+**With this:** Every conversation compounds. Your pitch gets sharper automatically.
 
 ### `neurodivergent-founder`
 
-ADHD and neurodivergent-aware interaction rules for founders using Claude Code as a business operating system. Changes how Claude communicates, creates tasks, structures outreach, and runs daily routines.
+Changes how Claude talks to you. No "you need to do this today." No guilt about missed follow-ups. No 12-item urgent lists that trigger a freeze response.
 
-**What it does:**
-- Enforces 7 behavioral rules: no shame/pressure, RSD accommodation, effort over outcomes, gradual ramps, choices not commands, freeze response handling, energy-aware task design
-- Implements energy mode framework (Quick Win / Deep Focus / People / Admin) for context-batched task management
-- Provides outreach patterns that respect rejection sensitivity
-- Includes a drop-in CLAUDE.md section for permanent behavioral rules
+Instead: tasks tagged by energy level (Quick Win / Deep Focus / People / Admin), outreach framed as sharing expertise instead of asking favors, and choices instead of commands.
 
-**Trigger phrases:** "ADHD", "neurodivergent", "energy modes", "executive function", "task batching"
+**Without this:** Claude acts like every other productivity tool that makes you feel behind.
 
-## Installation
+**With this:** Claude works with your brain instead of against it.
 
-### Option 1: Copy to your skills directory
+## Install
 
 ```bash
-# Clone the repo
 git clone https://github.com/assafkip/founder-skills.git
-
-# Copy skills to your Claude Code skills directory
 cp -r founder-skills/skills/* ~/.claude/skills/
 ```
 
-### Option 2: Symlink (recommended for staying up to date)
+<details>
+<summary>Other install methods</summary>
 
+**Symlink (stays up to date):**
 ```bash
 git clone https://github.com/assafkip/founder-skills.git ~/founder-skills
-
-# Symlink each skill
 ln -s ~/founder-skills/skills/founder-debrief ~/.claude/skills/founder-debrief
 ln -s ~/founder-skills/skills/neurodivergent-founder ~/.claude/skills/neurodivergent-founder
 ```
 
-### Option 3: Git submodule (for project-specific installation)
-
+**Git submodule:**
 ```bash
-# From your project root
 git submodule add https://github.com/assafkip/founder-skills.git .claude/founder-skills
-
-# Symlink skills
 ln -s .claude/founder-skills/skills/founder-debrief .claude/skills/founder-debrief
 ln -s .claude/founder-skills/skills/neurodivergent-founder .claude/skills/neurodivergent-founder
 ```
+</details>
 
-### Verify installation
+After installing, just mention "debrief" after a conversation or "ADHD" / "energy modes" in any session. The skills activate automatically.
 
-After installing, start a Claude Code session and ask Claude to debrief a conversation or mention ADHD/energy modes. The skills should activate automatically based on trigger phrases.
+## Why these exist
 
-## Why These Exist
+The Claude Code skills ecosystem is almost entirely developer-focused. Linting, testing, deployment, code review. Nothing for the operational side of actually running a company.
 
-The Claude Code skills ecosystem (380+ skills) is almost entirely developer-focused - linting, testing, deployment, code review. Nothing exists for the operational side of running a company: extracting insights from conversations, managing neurodivergent workflows, or building a compounding knowledge system from founder interactions.
-
-These skills fill that gap. They were built by a founder with ADHD running a pre-seed startup entirely through Claude Code, and refined across months of daily use.
-
-## Using Them Together
-
-The two skills are designed to work together:
-
-1. After a conversation, invoke `founder-debrief` to extract and route insights
-2. Follow-up tasks from the debrief automatically get energy tags and time estimates (from `neurodivergent-founder`)
-3. Daily routines surface debrief follow-ups organized by energy mode
-4. Outreach suggested by debriefs follows the gradual ramp pattern
-
-You can also use each skill independently.
+If you're a founder using Claude Code as your operating system, these are for you.
 
 ## Credits
 
-- [ravila4/claude-adhd-skills](https://github.com/ravila4/claude-adhd-skills) - Complementary ADHD skills focused on developer time management, Pomodoro tracking, and Obsidian journaling. Use alongside `neurodivergent-founder` for full coverage.
-- [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) - Marketing skills for Claude Code that inspired the skill packaging pattern.
+- [ravila4/claude-adhd-skills](https://github.com/ravila4/claude-adhd-skills) - Complementary ADHD skills for developer workflows
+- [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) - Marketing skills that inspired the packaging pattern
 
-## License
-
-MIT. See [LICENSE](LICENSE).
+[MIT License](LICENSE)
